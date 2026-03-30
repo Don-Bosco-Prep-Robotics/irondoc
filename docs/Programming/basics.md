@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'The Basics'
-sidebar_position: 3
+sidebar_position: 1
 ---
 
 # Welcome to IronDocs!
@@ -21,3 +21,8 @@ This is a list of resources you could use to expand the knowledge on this websit
 #### WPILIB  
 - WPILIB is the standard FRC software setup. See https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html
 - REV Hardware Client - https://docs.revrobotics.com/rev-hardware-client-2. Use this version. 
+
+
+## Start Here
+
+See **Comand Based Programming**
