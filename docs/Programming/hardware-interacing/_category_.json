@@ -1,0 +1,8 @@
+{
+  "label": "Hardware Interfacing",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Basic Instruction on programming and running the motors and other hardware our teams use - primarily Neos, via SparkMax"
+  }
+}

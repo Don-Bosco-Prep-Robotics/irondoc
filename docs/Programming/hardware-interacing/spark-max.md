@@ -9,6 +9,8 @@ We use SparkMax motor controllers
 
 ![Spark Max](./img/sparkmax.png)
 
+## Configuring
+
 They are made by REV, and interface very well with Rev's other hardware, ie, the NEO. They must be configured for each individual case. There are two ways to do this.  
 **ONE** is via the *REV Hardware Client*. (See [Navigating The Client](https://docs.revrobotics.com/rev-hardware-client-2/rhc2/navigation))  
 This is Rev's application for controlling, managing, and configuring Rev hardware. See [The Basics](../basics)
@@ -29,3 +31,26 @@ spark.configure(config, ResetMode.kResetSafeParameters, PersistMode.kPersistPara
 ```
 
 #### TODO - image here
+
+## Controlling
+
+Spark's have a few different modes for running them. The simplest, and most common, is **Duty Cycle*.
+
+### Duty Cycle
+Standard duty cycle takes a setpoint from -1 to 1. This has no feedback control, but integrates nicely with most code because other things in WPILIB, ie, joysticks, return values from -1 to 1.
+This is as simple as:
+```jsx
+spark.set(.5);
+```
+
+### Voltage Mode
+Voltage mode takes a voltage from [-12,12]. We don't really use this a ton, except for drive testing in SysID.
+```jsx
+spark.setVoltage(10);
+```
+
+### Position Control
+This is closed-loop position control. It is pretty standard PID.
+
+### Velocity Control
+This is closed-loop velocity control. It is *also* pretty standard PID.

@@ -13,4 +13,4 @@ The docs link is in resources. They explain things pretty well.
 
 You don't need to do anything special, just publish to SmartDashboard. You can then just get at them from elastic.
 
-TODO - image here
+![SmartDashboard](./imgs/eaw.avif)
