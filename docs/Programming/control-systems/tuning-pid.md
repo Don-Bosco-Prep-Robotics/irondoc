@@ -10,7 +10,7 @@ Also see the WPILIB page on tuning PID for more information - https://docs.wpili
 
 ## PID Tuning Best Practice
 
-:::tip
+:::warning
 Put it on the cart first. It will do crazy things, don't let it do them to the lab
 :::
 ### Order of Tuning
