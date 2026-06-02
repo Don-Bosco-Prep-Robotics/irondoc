@@ -1,6 +1,5 @@
 ---
-sidebar_label: 'Command Based Programming'
-sidebar_position: 1
+title: Command Based Programming
 ---
 
 

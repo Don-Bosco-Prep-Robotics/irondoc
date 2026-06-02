@@ -1,6 +1,5 @@
 ---
-sidebar_label: 'Elastic'
-sidebar_position: 2
+title: Elastic
 ---
 
 

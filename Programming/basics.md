@@ -1,6 +1,5 @@
 ---
-sidebar_label: 'The Basics'
-sidebar_position: 1
+title: The Basics
 ---
 
 # Welcome to IronDocs!
@@ -18,12 +17,13 @@ This is a list of resources you could use to expand the knowledge on this websit
 - AdvantageScope / AdvantageKit / URCl - https://docs.advantagescope.org/
 - Elastic Docs - https://frc-elastic.gitbook.io/docs
 - MARS/WARS Docs - This is a poor copy of these - https://docs.marswars.org/
+
 ## Apps to install
 #### WPILIB  
 - WPILIB is the standard FRC software setup. See https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html
-- REV Hardware Client - https://docs.revrobotics.com/rev-hardware-client-2. Use this version. 
+- REV Hardware Client - https://docs.revrobotics.com/rev-hardware-client-2. Use this version.
 
 
 ## Start Here
 
-See **Comand Based Programming**
+See [[command-based]]

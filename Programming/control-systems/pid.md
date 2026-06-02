@@ -1,11 +1,10 @@
 ---
-sidebar_label: 'PID Control'
-sidebar_position: 2
+title: PID Control
 ---
 
 # Introduction to PID
 
-**Note** - Check WPILIB for more information (See the Resources page)
+**Note** - Check WPILIB for more information (See [[basics]])
 
 #### PID Loops
 

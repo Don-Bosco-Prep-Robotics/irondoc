@@ -1,6 +1,5 @@
 ---
-sidebar_label: 'IO Layers'
-sidebar_position: 3
+title: IO Layers
 ---
 
 
@@ -16,7 +15,7 @@ An example can be seen here:
 The `Drivetrain.java` class sends values to any one of the classes extending `DriveIO`, ie, `DriveIOSparkMax` and `DriveIOSim`. `DriveIOSparkMax` sends commands to the SparkMax's on the robot, and `DriveIOSim` sends commands to a simulated robot.  
 
 The fact that both classes extend `DriveIO` means that they can be used essentially interchangably - we can place a constant in `Constants.java` that does the following:  
-``` jsx
+```java
 public static final Mode currentMode = RobotBase.isReal() ? Mode.REAL : Mode.SIM;
 
 public static enum Mode {
@@ -34,7 +33,7 @@ public static enum Mode {
 ```  
 
 This switches between REAL and SIM depending on whether the robot is running a simulation. Then a piece of logic in `RobotContainer.java` does this,
-```jsx
+```java
 switch (Constants.currentMode) {
     case REAL:
         drivetrain = new Drivetrain(new DriveIOSparkMax(), new GyroIONavX());

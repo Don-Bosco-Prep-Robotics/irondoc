@@ -1,6 +1,5 @@
 ---
-sidebar_label: 'Pathplanner'
-sidebar_position: 1
+title: Pathplanner
 ---
 
 # How To Use Pathplanner

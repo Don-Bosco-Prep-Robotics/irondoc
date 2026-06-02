@@ -1,6 +1,5 @@
 ---
-sidebar_label: 'File Stucture'
-sidebar_position: 2
+title: File Structure
 ---
 
 

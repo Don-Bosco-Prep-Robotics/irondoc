@@ -1,6 +1,5 @@
 ---
-sidebar_label: 'Advantage Scope'
-sidebar_position: 3
+title: Advantage Scope
 ---
 
 
