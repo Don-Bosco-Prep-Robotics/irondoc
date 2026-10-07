@@ -1,0 +1,8 @@
+{
+  "label": "2026 Robot Code",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Learn how the 4653 Rebuilt offseason robot currently works, where each behavior is implemented, and how to extend it safely."
+  }
+}

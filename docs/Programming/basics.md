@@ -26,4 +26,4 @@ This is a list of resources you could use to expand the knowledge on this websit
 
 ## Start Here
 
-See **Comand Based Programming**
+Start with [Command Based Programming](./code-layout/command-based), then read the [2026 Robot Code Overview](./robot-code-2026/overview) to see how those ideas are used in the current robot project.

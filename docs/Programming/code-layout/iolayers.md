@@ -6,6 +6,10 @@ sidebar_position: 5
 
 # IO Layers
 
+:::note Previous architecture
+This page describes an IO-layer pattern used in earlier team code. The current `4653-Rebuilt-offseason2026` project does **not** use separate `DriveIOReal` and `DriveIOSim` implementations. It uses YAMS mechanism wrappers and their built-in simulation methods instead.
+:::
+
 We used to put all the subsystem code inside on file. This inevitably led to immense, cluttered files, which took time to edit on any scale.  
 
 In the 2025-2026 Rebuilt season, I switched to IO Layers. They do the actual directing of the mechanical/electrical subsytem, the subsystem file only sends commands to them. The IO layers in return send back values in an `IOInputs` class, such as velocities or positions.  
@@ -48,3 +52,15 @@ switch (Constants.currentMode) {
     }
 ```  
 feeding the `Drivetrain` class a Real or Simulated `DriveIO` depending on the mode.
+
+## When to Use This Pattern Again
+
+IO layers are still useful when the team needs strict separation between hardware, simulation, and log replay. If this pattern is introduced into the current project:
+
+1. define a small interface for commands sent to and measurements received from the mechanism;
+2. create real, simulated, and replay implementations;
+3. keep control logic in the subsystem rather than duplicating it in every implementation;
+4. select the implementation once in `RobotContainer`; and
+5. migrate one subsystem at a time with tests and telemetry.
+
+Do not mix two architectures halfway through one mechanism. Document which layer owns motor configuration, simulation state, and logged inputs before migrating.
