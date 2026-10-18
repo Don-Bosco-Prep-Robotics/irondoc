@@ -10,7 +10,7 @@ We used to put all the subsystem code inside on file. This inevitably led to imm
 
 In the 2025-2026 Rebuilt season, I switched to IO Layers. They do the actual directing of the mechanical/electrical subsytem, the subsystem file only sends commands to them. The IO layers in return send back values in an `IOInputs` class, such as velocities or positions.  
 
-An example can be seen here:  
+An example can be seen here:
 ![IO Layers](./static/io.png)  
 
 The `Drivetrain.java` class sends values to any one of the classes extending `DriveIO`, ie, `DriveIOSparkMax` and `DriveIOSim`. `DriveIOSparkMax` sends commands to the SparkMax's on the robot, and `DriveIOSim` sends commands to a simulated robot.  
