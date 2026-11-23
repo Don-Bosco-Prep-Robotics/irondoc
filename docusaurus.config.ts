@@ -25,6 +25,10 @@ const config: Config = {
   projectName: 'irondoc', // Usually your repo name.
 
   onBrokenLinks: 'throw',
+  
+  markdown: {
+    mermaid:true
+  },
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -33,6 +37,9 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+    clientModules: [
+    require.resolve('./src/clientModules/d3Transition.js'),
+  ],
 
   presets: [
     [
@@ -144,6 +151,8 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+
+  themes: ['@docusaurus/theme-mermaid'],
 };
 
 export default config;
